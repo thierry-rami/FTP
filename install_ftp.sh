@@ -7,6 +7,7 @@ service proftpd stop
 #création de la clé et du certificat
 mkdir /etc/proftpd/ssl
 openssl req -new -x509 -keyout /etc/proftpd/ssl/proftpd.key.pem -days 365 -nodes -out /etc/proftpd/ssl/proftpd.cert.pem
+chmod 740 /etc/proftpd/ssl/*
 
 #on supprime les fichiers de base
 rm /etc/proftpd/proftpd.conf
