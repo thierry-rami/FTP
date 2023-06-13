@@ -15,9 +15,9 @@ rm /etc/proftpd/modules.conf
 
 #récupeation des fichiers de config sur github 
 cd /etc/proftpd/
-wget https://github.com/thierry-rami/FTP/tree/main/config/proftpd.conf
-wget https://github.com/thierry-rami/FTP/tree/main/config/modules.conf
-wget https://github.com/thierry-rami/FTP/tree/main/config/tls.conf
+wget https://raw.githubusercontent.com/thierry-rami/FTP/main/config/proftpd.conf
+wget https://raw.githubusercontent.com/thierry-rami/FTP/main/config/modules.conf
+wget https://raw.githubusercontent.com/thierry-rami/FTP/main/config/tls.conf
 
 # on relance le service proftpd
 service proftpd start
