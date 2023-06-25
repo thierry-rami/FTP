@@ -7,6 +7,8 @@ cat Shell_Userlist.csv| while IFS="," read -r Id Prenom Nom Mdp Role; do
 	if [ "$Id" = 'Id' ]; then
 		continue
 	fi
+	
+# X-Team
 
 if [ $? -eq 0 ]; then 
         # enleve les majuscules

@@ -1,7 +1,7 @@
 #/bin/bash
 # maj des paquets
 apt update && apt upgrade -y
-apt-get install proftpd proftpd-mod-crypto wget clamav clamav-daemon -y
+apt-get install proftpd-core  proftpd-mod-crypto wget clamav clamav-daemon -y
 service proftpd stop
  
 ## Tips , afficher adr IP sur la console avant le Login
@@ -28,6 +28,7 @@ wget https://raw.githubusercontent.com/thierry-rami/FTP/main/config/tls.conf
 # on relance le service proftpd
 service proftpd start
 
+# X-Team
 # on active le lancement de proftpd au boot
 systemctl enable proftpd
 
