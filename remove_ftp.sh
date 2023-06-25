@@ -1,5 +1,9 @@
 #/bin/bash
 service proftpd stop
+servive clamav-daemon stop
+service antivirus stop
+systemctl enable antivirus
+rm -fr /etc/systemd/system/antivirus.service
 rm -fr /etc/proftpd/ssl
-apt purge proftpd-core proftpd-mod-crypto
+apt purge proftpd proftpd-mod-crypto wget clamav clamav-daemon
 apt autoremove
