@@ -20,7 +20,7 @@
 * **test de la partie Antivirus** :
 
 
-	se loguer en tant qu’utilisateur ( pas root ) et taper :
+	Se loguer en tant qu’utilisateur ( pas root ) et taper :
 	
 		cd
 		echo > eicar.txt 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*'
@@ -43,11 +43,13 @@
 		Sun Jun 25 09:14:16 2023 -> instream(local): Eicar-Signature(69630e4574ec6798239b091cda43dca0:69) FOUND
 	
 	
-* **désinstallation** :
+* **Désinstallation** :
 	
 		wget https://raw.githubusercontent.com/thierry-rami/FTP/main/remove_ftp.sh
 		chmod +x remove_ftp.sh
 		./remove_ftp.sh
 	
 	
-	PS : 
+	**PS :** 
+	Un problème sous Debian 12 , le service ne se lance pas au démarrage.
+	Il faut le lancer manuellement  par: systemctl start proftpd
